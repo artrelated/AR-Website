@@ -332,7 +332,7 @@ img {
 .header {
   padding: 1em 0 2em 3em;
 }
-a.logo:link {
+.logo a:link {
   font-family: 'AR-ial', Arial, sans-serif;
   font-size: 7em;
   position: fixed;
