@@ -324,6 +324,7 @@ template {
 html {
   height: 100%;
   scroll-behavior: smooth;
+  font-variant-numeric: oldstyle-nums;
 }
 img {
   margin-left: -3em;
@@ -339,6 +340,9 @@ img {
   top: 0.35em;
   left: 0.2em;
   text-decoration: none;
+  color: black;
+}
+.logo a:visited {
   color: black;
 }
 .title {
