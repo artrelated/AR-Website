@@ -323,7 +323,7 @@ template {
 }
 html {
   height: 100%;
-  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 img {
   margin-left: -3em;
@@ -332,12 +332,14 @@ img {
 .header {
   padding: 1em 0 2em 3em;
 }
-.logo {
+.logo a {
   font-family: 'AR-ial', Arial, sans-serif;
   font-size: 7em;
   position: fixed;
   top: 0.35em;
   left: 0.2em;
+  text-decoration: none;
+  color: black;
 }
 .title {
   font-family: 'AR-ial', Arial, sans-serif;
