@@ -326,6 +326,9 @@ html {
   scroll-behavior: smooth;
   font-variant-numeric: oldstyle-nums;
 }
+body {
+    font-size: 3.1vw;
+}
 img {
   margin-left: -3em;
   max-width: 106.5%;
@@ -393,6 +396,9 @@ img {
   z-index: 3;
 }
 @media screen and (min-width: 1025px) {
+	body {
+    font-size: 1.3vw;
+}
   .contain {
     max-width: 50%;
     margin: 0 auto;
