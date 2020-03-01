@@ -405,7 +405,7 @@ img {
   transition: visibility 0.1s, opacity 0.1s ease-in-out;
   background: rgba(255, 255, 255, 0.9);
   padding: 1em;
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 1025px) {
   body {
@@ -425,11 +425,9 @@ img {
   .margin-left {
     margin-left: 1em;
   }
-.drop-menu {
-  background: rgba(255, 255, 255, 0.5);
-  line-height: 1.3em;
-		font-size: 1.3em;
-
-}
-
+  .drop-menu {
+    background: rgba(255, 255, 255, 0.5);
+    line-height: 1.3em;
+    font-size: 1.3em;
+  }
 }
