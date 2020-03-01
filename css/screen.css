@@ -364,11 +364,15 @@ img {
 }
 .title {
   font-family: 'AR-ial', Arial, Helvetica, sans-serif;
-  font-size: 1.69em;
-  padding-left: 2.5em;
+  font-weight: 800;
+  font-size: 2em;
+  padding-left: 2.25em;
 }
 .menu {
-  padding-left: 4.45em;
+  padding-left: 4em;
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin-top: 0.7em;
 }
 .subtitle {
   font-family: 'AR-ial', Arial, Helvetica, sans-serif;
@@ -386,7 +390,6 @@ img {
 }
 .main {
   width: 95%;
-  position: relative;
   padding-bottom: 3em;
   line-height: 1.15em;
   font-size: 1.33em;
@@ -409,6 +412,8 @@ img {
   height: 100%;
 }
 .drop-menu {
+  font-family: 'AR-ial', Arial, Helvetica, sans-serif;
+  font-weight: 800;
   position: fixed;
   line-height: 2em;
   visibility: hidden;
