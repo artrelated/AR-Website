@@ -429,6 +429,9 @@ img {
   body {
     font-size: 1.3vw;
   }
+  .menu {
+    font-size: 1.05vw;
+  }
   .contain {
     max-width: 50%;
     margin: 0 auto;
