@@ -364,7 +364,7 @@ img {
 }
 .title {
   font-family: 'AR-ial', Arial, Helvetica, sans-serif;
-  font-size: 1.7em;
+  font-size: 1.69em;
   padding-left: 2.5em;
 }
 .menu {
@@ -385,7 +385,7 @@ img {
   margin-left: 3em;
 }
 .main {
-  width: 85%;
+  width: 95%;
   position: relative;
   padding-bottom: 3em;
   line-height: 1.15em;
@@ -393,7 +393,7 @@ img {
   background: white;
 }
 .indent {
-  padding-left: 0;
+  padding-left: 4.45em;
 }
 .vid {
   position: relative;
