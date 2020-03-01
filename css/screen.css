@@ -369,7 +369,7 @@ img {
   padding-left: 2.25em;
 }
 .menu {
-  padding-left: 4em;
+  padding-left: 4.05em;
   font-size: 1.1em;
   line-height: 1.2;
   margin-top: 0.7em;
@@ -430,7 +430,8 @@ img {
     font-size: 1.3vw;
   }
   .menu {
-    font-size: 1.05vw;
+    font-size: 1.05em;
+    padding-left: 4.2em;
   }
   .contain {
     max-width: 50%;
