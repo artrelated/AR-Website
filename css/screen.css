@@ -336,7 +336,7 @@ img {
   padding: 1em 0 2em 3em;
 }
 .logo {
-  font-family: 'AR-ial', Arial, sans-serif;
+  font-family: 'AR-ial', Arial, Helvetica, sans-serif;
   font-size: 7em;
   color: white;
   position: fixed;
@@ -362,7 +362,7 @@ img {
   outline: none;
 }
 .title {
-  font-family: 'AR-ial', Arial, sans-serif;
+  font-family: 'AR-ial', Arial, Helvetica, sans-serif;
   font-size: 1.72em;
   padding-left: 2.5em;
 }
@@ -370,7 +370,7 @@ img {
   padding-left: 4.45em;
 }
 .subtitle {
-  font-family: 'AR-ial', Arial, sans-serif;
+  font-family: 'AR-ial', Arial, Helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: 800;
   text-transform: uppercase;
