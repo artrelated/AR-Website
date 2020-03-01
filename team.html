@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="..">about us</a>, our current <a href="projects">projects</a>, the works in the <a href="archive">archive</a> or our team.<br>
       If you have questions please <a href="contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="content">
     <p>Rita / «Margarita Kudrina»</p>
     <p>For the past eight years, Rita has been working in the arts as a project manager and curator in Europe and the USA. She gained her education in Film and Communication Studies at the Vienna University which was pivotal for her future professional and personal development. It laid the foundations of her understanding of the Arts and Humanities and helped realize her professional direction. After she did an internship as a Public Art Commissions Assistant at the Contemporary Art Society in London, she was sure of her vocation. Ever since she kept working as a project manager and curator along with artists, film makers and scientists on projects that help the individual extend their awareness of the world we live in. Her passion for interdisciplinary projects has grown over the past years of practice. Bringing art, science and technology together lies at the very heart of her work as a director at Art Related Foundation.</p>
@@ -22,6 +22,23 @@
     <p>His work brought him to galleries in Berlin, Paris, Chicago, Porto, Sofia, Tainan, Bern. He was awarded the Gaudenz B. Ruf award for new Bulgarian art in 2016 and was nominated for the BAZA award in 2017.</p>
     <p>In 2019 he founded the Art Related Foundation in Sofia, Bulgaria for the purpose of developing international projects that foster cultural and artistic diversity.</p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

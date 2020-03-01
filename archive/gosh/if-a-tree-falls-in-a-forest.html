@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ART RELATED FOUNDATION | Gosh | If a tree falls in a forest and no one is around to hear it, does it make a sound?</title>
 <link href="../../css/screen.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" type="image/png">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="vid">
     <iframe src="https://player.vimeo.com/video/185373817?autoplay=1&loop=1&color=3030fd&title=0&byline=0&portrait=0&#t=0m7s" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
@@ -29,6 +29,23 @@
     <p class="indent">The audio element of the piece consists of a transmission of a microphone placed in the forest and played back for the duration of the exhibition.</p>
     <p class="indent">A small reading room with chairs, a reading lamp and two texts is setup in front of the darkened room. The papers are «Quantum superposition at the half-metre scale» by T. Kovachy, P. Asenbaum, C. Overstreet, C. A. Donnelly, S. M. Dickerson, A. Sugarbaker, J. M. Hogan and M. A. Kasevich and «Wheeler’s delayed-choice gedanken experiment with a single atom» by A. G. Manning, R. I. Khakimov, R. G. Dall and A. G. Truscott.</p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

@@ -9,15 +9,33 @@
 
 <body>
 <div class="main">
-  <div class="header"> <span class="title"><strong>ART RELATED</strong></span>
-    <p class="menu">Find out more <a href="..">about us</a>, our current projects, the works in the <a href="archive">archive</a> or our <a href="team">team.</a><br>
-      If you have questions please <a href="contact">contact us.</a></p>
-  </div>
-  <div class="logo"><a href="#top">®</a></div>
+<div class="header"> <span class="title"><strong>ART RELATED</strong></span>
+  <p class="menu">Find out more <a href="..">about us</a>, our current projects, the works in the <a href="archive">archive</a> or our <a href="team">team.</a><br>
+    If you have questions please <a href="contact">contact us.</a></p>
+</div>
+<button onClick="dropmenu()" class="logo">®</button>
+<div class="content"> Take a look at the Art Related projects.
   <div class="content"> Take a look at the Art Related projects.
     <p>The whistled language project<br>
       <a href="projects/all-rights-reversed">All Rights Reversed</a></p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ART RELATED FOUNDATION | Gosh | An audiovisual representation of the comparison data of coastal towns</title>
 <link href="../../css/screen.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" type="image/png">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="vid">
     <iframe src="https://player.vimeo.com/video/204003161?autoplay=1&loop=1&color=3030fd&title=0&byline=0&portrait=0&#t=0m7s" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
@@ -28,6 +28,23 @@
     <p class="indent">An abstract rendition of the recordings of the interviews played on a four-channel reel-to-reel machine fulfill the auditory dimension of the piece. The interviews have been transcribed, translated into English and collected in a book, which is available as part of the installation.</p>
     <p class="indent">Delving deeper, one uncovers ever more fates. Gaining diverse perspectives onto one’s own experiences, assuming a position outside of time, breaking apart the space-time continuum.</p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

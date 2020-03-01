@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ART RELATED FOUNDATION | Rita | Le Cinema Olfactif</title>
 <link href="../../css/screen.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" type="image/png">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="content"> <img src="../img/le-cinema-olfactif-the-lobster-perfume-by-folie-a-plusieurs-perfumes.jpg" />
     <p class="mobile-caption"></p>
     <p class="subtitle">Le Cinema Olfactif</p>
@@ -22,6 +22,23 @@
     <p class="indent">The project encourages viewers to extract more from a cinematic experience, and explores a gamut of emotional responses that can be evoked in an environment where visual, audio and scent come together to tell a story. Apart from curating the project, my specific responsibilities included managing the communication with artists and vendors for production of artworks and scents, logistics, managing film screenings in different locations in Europe, support with managing the production of marketing / promotional events / product related events.</p>
     <p class="indent">You can find more about it here – https://www.folie.space/</p>
     <img src="../img/le-cinema-olfactif-la-haine-perfume-by-folie-a-plusieurs-perfumes.jpg.jpg" /> <img src="../img/Folie-A-Plusieurs-Parfums-Mood-Indigo-Fragrance-Le-Cinema-Olfactif-Series.jpg" /> <img src="../img/Folie-A-Plusieurs-Parfums-The-Virgins-Fragrance-Le-Cinema-Olfactif-Series.jpg"  /> <img src="../img/le-cinema-olfactif-Daisies-perfume-by-folie-a-plusieurs-perfumes.jpg" /> <img src="../img/le-cinema-olfactif-love-exposure-perfume-by-folie-a-plusieurs-perfumes.jpg" /> <img src="../img/ALEX+DE+BRABANTjpg.jpeg" /> </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

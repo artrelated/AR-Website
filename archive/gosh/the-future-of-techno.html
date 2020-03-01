@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ART RELATED FOUNDATION | Gosh | The future of techno</title>
 <link href="../../css/screen.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" type="image/png">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="content"><img src="../img/the-future-of-techno.jpg" />
     <p class="mobile-caption">Installation, book, mixed media. Glass aquarium, sand, book. 2017. Installation view at Æther in Sofia, February, 2017 as part of the group show «The future was here.» Photo courtesy of the author.</p>
     <p class="subtitle">The future of techno</p>
@@ -24,6 +24,23 @@
     <p class="indent">This sentiment reigns supreme within electronic music’s domain. Desperately obsessed with the past, the last explosion of honest futurism it had, was in the face of dubstep. A continuation of a starry vision which began with an inventive discharge, birthing house, techno, hip hop at the end of the ‘70s and the beginning of the ‘80s of the past century. The socio-cultural implications of this event branch out to the early years of the post WWII western world.</p>
     <p class="indent">A far stretching story following an insane chain of «incidents», which brought a contained cultural event to world dominance. Yet it seems the phenomenon has been steered into a dead-end.</p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

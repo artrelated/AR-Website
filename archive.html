@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="..">about us</a>, our current <a href="projects">projects</a>, the works in the archive or our <a href="team">team.</a><br>
       If you have questions please <a href="contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="content"> Take a look at our individual projects.
     <p>Rita / «Margarita Kudrina»</p>
     <p><a href="projects/all-rights-reversed">All Rights Reversed</a><br>
@@ -38,6 +38,23 @@
       <a href="archive/gosh/manifest-a-work-on-progress">Manifest: A work on progress</a><br>
       <a href="archive/gosh/octopussys-garden">Octopussy's Garden</a></p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

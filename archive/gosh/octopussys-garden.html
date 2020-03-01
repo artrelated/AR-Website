@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ART RELATED FOUNDATION | Gosh | Octopussy's Garden</title>
 <link href="../../css/screen.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" type="image/png">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="content"><img src="../img/octopussy-3.jpg" />
     <p class="mobile-caption">Performance. 2018. Performed at Sprechsaal, Berlin as part of the «Breathing the ultimate wave #feminismandclass 2018» series of events. Image courtesy of <a href="https://leahopp.com/">Lea Hopp</a>.</p>
     <p class="subtitle">Octopussy's Garden</p>
@@ -31,6 +31,23 @@
     <p class="indent">Danke an Kara Schröder</p>
     <p class="indent">Die Veranstaltung fand statt im Rahmen von Breathing the ultimate wave #feminismandclass 2018 im Sprechsaal Berlin.</p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

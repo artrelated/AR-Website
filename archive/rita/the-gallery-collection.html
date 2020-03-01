@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ART RELATED FOUNDATION | Rita | The Gallery Collection</title>
 <link href="../../css/screen.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="../../favicon.png" type="image/png">
 </head>
 
 <body>
@@ -13,13 +13,30 @@
     <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
-  <div class="logo"><a href="#top">®</a></div>
+  <button onClick="dropmenu()" class="logo">®</button>
   <div class="content"> <img src="../img/AJ-samples-02-20-2015.jpeg" />
     <p class="mobile-caption"></p>
     <p class="subtitle">The Gallery Collection</p>
     <p class="indent">Folie À Plusieurs Parfums Gallery Collection was developed as an idea by the creative director Kaya Sorhaindo. The collection was curated by both of us and represented a series of stand alone scents by the important international figures in Fashion, Film, Literature, Dance, Architecture, Design, Photography and Contemporary Art. These scents would arise out of an unrestricted collaboration between the contributing artist and an internationally renowned perfumer. Each Folie À Plusieurs Parfum under the «Gallery Collection» would begin with the contributor proposing a concept for the creation of an exclusive artwork. This artwork would drive the inspiration for the scent, and shape the creative conversations between the artist and the perfumer in the development process. Both the artwork and scent would be inseparable, together they would bring to life the complete experience of the project. The scent becomes a drifting aura of the object, and the object a permanent memory of the scent. We only managed to develop the scents, but due to lack of further investment in the project, the artworks and scents were never released.</p>
     <p class="indent">Artists: David LaChapelle, Alfreado Jaar, Marco Brambilla</p>
   </div>
+  <script>
+function dropmenu() {
+  var x = document.getElementById("dm");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity = "0";
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity = "1";
+  }
+}
+</script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
 </div>
 </body>
 </html>

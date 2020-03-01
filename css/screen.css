@@ -402,7 +402,7 @@ img {
   left: 1.4em;
   line-height: 2em;
   visibility: hidden;
-  transition: visibility 0.1s, opacity 0.1s ease-in-out;
+  transition: visibility 0s, opacity 0.1s ease-in-out;
   background: rgba(255, 255, 255, 0.9);
   padding: 1em;
   font-size: 1.5em;
