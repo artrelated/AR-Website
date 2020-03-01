@@ -428,5 +428,6 @@ img {
   .drop-menu {
     line-height: 1.3em;
     font-size: 1.3em;
+    background: rgba(255, 255, 255, 0.9);
   }
 }
