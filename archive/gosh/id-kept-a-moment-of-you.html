@@ -14,7 +14,7 @@
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
   <div class="logo">®</div>
-  <button onClick="dropmenu()" class="button"></button>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
   <div class="content"><img src="../img/id-kept-a-moment-of-you-1.png" />
     <p class="mobile-caption">Audiovisual installation, multi-media. 35mm slides, four slide projectors with timers, transparent projection panels. 2018. Photo courtesy of the author.</p>
     <p class="subtitle">I'd kept a moment of you</p>
@@ -27,17 +27,29 @@
     <p class="mobile-caption">«I'd kept a moment of you.» Photo courtesy of the author.</p>
   </div>
   <script>
-function dropmenu() {
-  var x = document.getElementById("dm");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-    x.style.opacity = "0";
-  } else {
-    x.style.visibility = "visible";
-    x.style.opacity = "1";
-  }
-}
-</script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
   <div id="dm" class="drop-menu"><a href="../../">About</a><br>
     <a href="../../projects">Projects</a><br>
     <a href="../../archive">Archive</a><br>

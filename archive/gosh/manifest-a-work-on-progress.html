@@ -14,7 +14,7 @@
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
   <div class="logo">®</div>
-  <button onClick="dropmenu()" class="button"></button>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
   <div class="vid">
     <iframe src="https://www.youtube-nocookie.com/embed/wzjf_C_pwTI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
@@ -36,17 +36,29 @@
     <iframe src="https://www.youtube-nocookie.com/embed/FQc55yja5ac?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
   <script>
-function dropmenu() {
-  var x = document.getElementById("dm");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-    x.style.opacity = "0";
-  } else {
-    x.style.visibility = "visible";
-    x.style.opacity = "1";
-  }
-}
-</script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
   <div id="dm" class="drop-menu"><a href="../../">About</a><br>
     <a href="../../projects">Projects</a><br>
     <a href="../../archive">Archive</a><br>

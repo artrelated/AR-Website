@@ -14,7 +14,7 @@
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
   <div class="logo">®</div>
-  <button onClick="dropmenu()" class="button"></button>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
   <div class="content"> <img src="../img/28928622_10155490199552879_303073926_o.jpg" />
     <p class="mobile-caption"></p>
     <p class="subtitle">Olfactif Diaries</p>
@@ -34,17 +34,29 @@
     <p class="indent"><i>Nostalgia</i>by artist Maripol &#38; perfumer Jerome Di Marino</p>
     <img src="../img/28927693_2123357061013080_1269208622_o.jpg" /><img src="../img/Screenshot+(20).jpeg" /><img src="../img/Screenshot+(22).jpeg" /><img src="../img/Screenshot+(24).jpeg" /><img src="../img/Screenshot+(26).jpeg" /> </div>
   <script>
-function dropmenu() {
-  var x = document.getElementById("dm");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-    x.style.opacity = "0";
-  } else {
-    x.style.visibility = "visible";
-    x.style.opacity = "1";
-  }
-}
-</script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
   <div id="dm" class="drop-menu"><a href="../../">About</a><br>
     <a href="../../projects">Projects</a><br>
     <a href="../../archive">Archive</a><br>

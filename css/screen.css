@@ -356,6 +356,7 @@ img {
   background: transparent;
   cursor: pointer;
   z-index: 1;
+  transition: opacity 0.1s ease-in-out;
 }
 .button:focus {
   outline: none;
@@ -411,13 +412,12 @@ img {
   line-height: 2em;
   visibility: hidden;
   transition: visibility 0s, opacity 0.1s ease-in-out;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 100%;
   font-size: 2em;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 1;
 }
 @media screen and (min-width: 1025px) {
   body {

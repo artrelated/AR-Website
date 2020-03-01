@@ -14,7 +14,7 @@
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
   <div class="logo">®</div>
-  <button onClick="dropmenu()" class="button"></button>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
   <div class="vid">
     <iframe src="https://player.vimeo.com/video/185373817?autoplay=1&loop=1&color=3030fd&title=0&byline=0&portrait=0&#t=0m7s" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
@@ -31,17 +31,29 @@
     <p class="indent">A small reading room with chairs, a reading lamp and two texts is setup in front of the darkened room. The papers are «Quantum superposition at the half-metre scale» by T. Kovachy, P. Asenbaum, C. Overstreet, C. A. Donnelly, S. M. Dickerson, A. Sugarbaker, J. M. Hogan and M. A. Kasevich and «Wheeler’s delayed-choice gedanken experiment with a single atom» by A. G. Manning, R. I. Khakimov, R. G. Dall and A. G. Truscott.</p>
   </div>
   <script>
-function dropmenu() {
-  var x = document.getElementById("dm");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-    x.style.opacity = "0";
-  } else {
-    x.style.visibility = "visible";
-    x.style.opacity = "1";
-  }
-}
-</script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
   <div id="dm" class="drop-menu"><a href="../../">About</a><br>
     <a href="../../projects">Projects</a><br>
     <a href="../../archive">Archive</a><br>

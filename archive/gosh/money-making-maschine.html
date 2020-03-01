@@ -14,7 +14,7 @@
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
   <div class="logo">®</div>
-  <button onClick="dropmenu()" class="button"></button>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
   <div class="content"><img src="../img/money-making-maschine-1.jpg" />
     <p class="mobile-caption">Kinetic sound sculpture, multi-media. Wood, steel, rubber, leather, paper. 2015. Installation view at Escola Superior de Música, Artes e Espectáculo, Porto, 2015. Photo courtesy of the author.</p>
     <p class="subtitle">Money making maschine</p>
@@ -26,17 +26,29 @@
     <p class="mobile-caption">Installation view at Casa da Música, Porto, 2015. Photo courtesy of the author.</p>
   </div>
   <script>
-function dropmenu() {
-  var x = document.getElementById("dm");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-    x.style.opacity = "0";
-  } else {
-    x.style.visibility = "visible";
-    x.style.opacity = "1";
-  }
-}
-</script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
   <div id="dm" class="drop-menu"><a href="../../">About</a><br>
     <a href="../../projects">Projects</a><br>
     <a href="../../archive">Archive</a><br>

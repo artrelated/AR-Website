@@ -14,7 +14,7 @@
       If you have questions please <a href="../../contact">contact us.</a></p>
   </div>
   <div class="logo">®</div>
-  <button onClick="dropmenu()" class="button"></button>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
   <div class="content"> <img src="../img/le-cinema-olfactif-the-lobster-perfume-by-folie-a-plusieurs-perfumes.jpg" />
     <p class="mobile-caption"></p>
     <p class="subtitle">Le Cinema Olfactif</p>
@@ -24,17 +24,29 @@
     <p class="indent">You can find more about it here – https://www.folie.space/</p>
     <img src="../img/le-cinema-olfactif-la-haine-perfume-by-folie-a-plusieurs-perfumes.jpg.jpg" /> <img src="../img/Folie-A-Plusieurs-Parfums-Mood-Indigo-Fragrance-Le-Cinema-Olfactif-Series.jpg" /> <img src="../img/Folie-A-Plusieurs-Parfums-The-Virgins-Fragrance-Le-Cinema-Olfactif-Series.jpg"  /> <img src="../img/le-cinema-olfactif-Daisies-perfume-by-folie-a-plusieurs-perfumes.jpg" /> <img src="../img/le-cinema-olfactif-love-exposure-perfume-by-folie-a-plusieurs-perfumes.jpg" /> <img src="../img/ALEX+DE+BRABANTjpg.jpeg" /> </div>
   <script>
-function dropmenu() {
-  var x = document.getElementById("dm");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
-    x.style.opacity = "0";
-  } else {
-    x.style.visibility = "visible";
-    x.style.opacity = "1";
-  }
-}
-</script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
   <div id="dm" class="drop-menu"><a href="../../">About</a><br>
     <a href="../../projects">Projects</a><br>
     <a href="../../archive">Archive</a><br>
