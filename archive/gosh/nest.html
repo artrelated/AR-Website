@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ART RELATED FOUNDATION | Gosh | Nest</title>
+<link href="../../css/screen.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../favicon.png" type="image/png">
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <span class="title">ART RELATED</span>
+    <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
+      If you have questions please <a href="../../contact">contact us.</a></p>
+  </div>
+  <div class="logo">®</div>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
+  <div class="vid">
+    <iframe src="https://player.vimeo.com/video/308662558?autoplay=1&loop=1&color=3030fd&title=0&byline=0&portrait=0&#t=0m6s" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <div class="content">
+    <p class="subtitle">Nest</p>
+    <p class="mobile-caption">Permanent audiovisual installation, multi-media. Concrete, bamboo, steel, speakers, amplifier, fan, plants. 2018. Installation view at Tsung Yeh Arts and Cultural Center, Tainan. Created for the Madou Sugar Industry Art Triennial 2019. Video courtesy of the authors.</p>
+    <p class="indent">«Nest» is a site-specific environmental art project that was realized in the Madou District of Tainan City, Taiwan. The concrete sculpture is a symbolic birdhouse, which stands as a permanent reminder of the impact and cost of progress. The placement of the structure in a repurposed factory complex monumentalizes departed industrialization, which contributed to the soundscape of the region today. Construction methods, empowered by the structural elements – bamboo and concrete – mirror the architectural techniques, which are unique to the region. The dome shape of the sculpture mimics the distinctive acoustic properties of orthodox cathedrals. The piece radiates low frequency sonic waves to balance out urban noise reestablishing a peaceful habitat for birds and other animals. The acoustic arrangement emphasizes the natural sensory diversity, framing the transition between past, present and future in the districts’ auditory evolution. «Nest» provides a positive viewpoint to industrialization, reminding us that it could be a tool used towards a harmonious and environmentally beneficial outcome.</p>
+    <img src="../img/nest-1.jpg" />
+    <p class="mobile-caption">Installation view at Tsung Yeh Arts and Cultural Center, Tainan. Photo courtesy of the authors.</p>
+    <p class="indent">The work demonstrates that positive environmental change is still possible if we abandon our disrespectful attitude towards nature. The artwork enables visitors to visualize the influence of civilization on nature and specifically the negative impact of rapid urbanization and raises questions regarding humanity’s future. What would our planet look and sound like if we continue down the same road?</p>
+    <img src="../img/nest-2.jpg" />
+    <p class="mobile-caption">Installation view at Tsung Yeh Arts and Cultural Center, Tainan. Up photo courtesy of the authors. Down photo courtesy of Rich John Matheson.</p>
+    <img src="../img/nest-3.jpg" /> </div>
+  <script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
+  <div id="dm" class="drop-menu"><a href="../../">About</a><br>
+    <a href="../../projects">Projects</a><br>
+    <a href="../../archive">Archive</a><br>
+    <a href="../../team">Team</a><br>
+    <a href="../../contact">Contact</a></div>
+</div>
+</body>
+</html>
