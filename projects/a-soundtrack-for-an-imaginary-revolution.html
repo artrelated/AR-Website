@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ART RELATED FOUNDATION | A soundtrack for an imaginary revolution</title>
+<link href="../css/screen.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../favicon.png" type="image/png">
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <span class="title">ART RELATED</span>
+    <p class="menu">Find out more <a href="../">about us</a>, our current <a href="../projects">projects</a>, the works in the <a href="../archive">archive</a> or our <a href="../team">team.</a><br>
+      If you have questions please <a href="../contact">contact us.</a></p>
+  </div>
+  <div class="logo">®</div>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
+  <div class="vid vertical">
+    <iframe src="https://player.vimeo.com/video/465184369?autoplay=1&loop=1&color=3030fd&title=0&byline=0&portrait=0fi" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <div class="content">
+    <p class="mobile-caption">A collaboration between Katya Cheng Hsiao Ching and Georgi Tomov Georgiev. Audiovisual installation, multi-media, mixed media. Duration: 155m. Poster (dimensions 4m x 1m), media player, speakers, warning tape. 2020. Installation view at Espace Port A, as part of the «Sofia Art Week – Swan Song» group show – Sofia, 2020. Video courtesy of the authors.</p>
+    <p class="subtitle">A soundtrack for an imaginary revolution</p>
+    <p class="indent">For Sofia Art Week 2020, «Swan Song», Art Related Foundation presented a work by Hsiao Ching Cheng and Georgi Tomov Georgiev at Espace Port A.</p>
+    <p class="indent">The purpose of the work is to collect politically critical, protest and revolutionary songs from various cultures and eras. The songs create a narrative in an audiovisual installation. Each song is contextualised with information on the artist, time, place, symbolic meaning, etc. and lyrics where available.</p>
+    <p class="indent">The ongoing project currently consists of 36 songs from 30 countries and autonomous regions and includes found footage of protests in Egypt (2011), Tunisia (2011), Ukraine (2013), Taiwan (2013), Hong Kong (2014, 2019, 2020), Chile (2019), Belarus (2020).</p>
+    <img src="../img/imaginary-revolution-2.jpg" />
+    <p class="mobile-caption">Installation view at Espace Port A, as part of the «Sofia Art Week – Swan Song» group show – Sofia, 2020. Photo courtesy of the authors.</p>
+    <p class="indent"><br />
+      <br />
+      The past is never there waiting to be discovered, to be recognized for exactly what it is. History always constitutes the relation between a present and its past.… The past is not for living in; it is a well of conclusions from which we draw in order to act.</p>
+    <p class="indent">[…]</p>
+    <p class="indent">If we 'saw' the art of the past, we would situate ourselves in history. When we are prevented from seeing it, we are being deprived of the history which belongs to us. Who benefits from this deprivation? In the end, the art of the past is being mystified because a privileged minority is striving to invent a history which can retrospectively justify the role of the ruling classes, and such a justification can no longer make sense in modern terms.</p>
+    <p class="indent">[…]</p>
+    <p class="indent">[Knowledge of the past would] confer a new kind of power. Within it we could begin to define our experiences more precisely in areas where words are inadequate. Not only personal experience, but also the essential historical experience of our relation to the past: that is to say the experience of seeking to give meaning to our lives, of trying to understand the history of which we can become the active agents.</p>
+    <p class="indent">[…]</p>
+    <p class="indent">A people or a class which is cut off from its own past is far less free to choose and to act as a people or class than one that has been able to situate itself in history. This is why — and this is the only reason why — the entire art of the past has now become a political issue.</p>
+    <p class="indent">From «Ways of Seeing» by John Berger<br />
+      <br />
+    </p>
+    <img src="../img/imaginary-revolution-3.jpg" />
+    <p class="mobile-caption">Installation view at Espace Port A, as part of the «Sofia Art Week – Swan Song» group show – Sofia, 2020. Photo courtesy of the authors.</p>
+    <p class="indent">With the help of:</p>
+    <p class="indent">Daria Kozlova<br />
+      Diego Sologuren<br />
+      Julio Lugon<br />
+      Larisa Shilderova<br />
+      Louise Hisayasu<br />
+      Luna De Rosa<br />
+      Mei Liu<br />
+      Nathasorn Oo Chantarasak<br />
+      Sangwon Nam<br />
+      Zainab Alwash</p>
+  </div>
+  <script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="../projects">Projects</a><br>
+    <a href="../archive">Archive</a><br>
+    <a href="../team">Team</a><br>
+    <a href="../contact">Contact</a></div>
+</div>
+</body>
+</html>
