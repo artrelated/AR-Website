@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ART RELATED FOUNDATION | Open call – International shepherd’s culture project 2023</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+<div class="main">
+  <div class="header"> <span class="title">ART RELATED</span>
+    <p class="menu">Find out more <a href="..">about us</a>, our current <a href="projects">projects</a>, the works in the <a href="archive">archive</a> or our team.<br>
+      If you have questions please <a href="contact">contact us.</a></p>
+  </div>
+  <div class="logo">®</div>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
+  <div class="content">
+    <p class="indent"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1NvgrukwsKmcg7lztZb74R3ruqnol7cUV1L8dECUHCthiGQ/viewform?embedded=true" width="640" height="2199" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
+  </div>
+  <script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
+  <div id="dm" class="drop-menu"><a href="../">About</a><br>
+    <a href="projects">Projects</a><br>
+    <a href="archive">Archive</a><br>
+    <a href="team">Team</a><br>
+    <a href="contact">Contact</a></div>
+</div>
+</body>
+</html>
