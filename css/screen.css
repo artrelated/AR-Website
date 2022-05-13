@@ -416,7 +416,7 @@ img {
 }
 .drop-menu {
   font-family: 'AR-ial', Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   position: fixed;
   line-height: 2em;
   visibility: hidden;
