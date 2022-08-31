@@ -363,7 +363,7 @@ img {
   outline: none;
 }
 .title {
-  font-family: 'AR-ial', Arial, Helvetica, sans-serif;
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 2em;
   padding-left: 2.25em;
@@ -375,7 +375,7 @@ img {
   margin-top: 0.7em;
 }
 .subtitle {
-  font-family: 'AR-ial', Arial, Helvetica, sans-serif;
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   text-transform: uppercase;
@@ -428,6 +428,26 @@ img {
   text-align: center;
   z-index: 1;
 }
+
+.sreda-header {
+  -webkit-animation: background 36s linear infinite;
+  animation: background 36s linear infinite;  
+}
+
+@-webkit-keyframes background {
+  0% { background-color: #9F9; }
+  33% { background-color: #FF9; }  
+  67% { background-color: #FF82E4; }
+  100% { background-color: #FF9; }
+}
+
+@keyframes background {
+  0% { background-color: #9F9; }
+  33% { background-color: #FF9; }  
+  67% { background-color: #FF82E4; }
+  100% { background-color: #9F9; }
+}	
+
 @media screen and (min-width: 1025px) {
   body {
     font-size: 1.3vw;
