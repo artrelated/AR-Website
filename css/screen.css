@@ -437,7 +437,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 99%;
-  height: 2em;
+  height: 1.3em;
   margin: 1.5em auto;
   border: 0.15em solid #000;
   font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
@@ -520,6 +520,7 @@ img {
     padding-bottom: 56.25% !important;
   }
   .cta {
+  height: 2em;
     font-size: 2em;
   }
 }
