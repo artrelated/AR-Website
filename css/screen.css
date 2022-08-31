@@ -428,26 +428,70 @@ img {
   text-align: center;
   z-index: 1;
 }
-
 .sreda-header {
-  -webkit-animation: background 36s linear infinite;
-  animation: background 36s linear infinite;  
+  -webkit-animation: background 12s linear infinite;
+  animation: background 12s linear infinite;
 }
-
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12em;
+  height: 2em;
+  margin: 1.5em auto;
+  border: 0.15em solid #000;
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  cursor: pointer;
+  background: white;
+  background: linear-gradient(to left, white 50%, #BDFF48 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.1s ease;
+}
+.cta:hover {
+  background-position: left bottom;
+}
+.cta:link {
+  text-decoration: none;
+  color: #000;
+}
+.cta:visited {
+  color: #000;
+}
+.cta-margin {
+  margin-left: 12.45em;
+}
 @-webkit-keyframes background {
-  0% { background-color: #9F9; }
-  33% { background-color: #FF9; }  
-  67% { background-color: #FF82E4; }
-  100% { background-color: #FF9; }
+  0% {
+    background-color: #9F9;
+  }
+  33% {
+    background-color: #FF9;
+  }
+  67% {
+    background-color: #FF82E4;
+  }
+  100% {
+    background-color: #FF9;
+  }
 }
-
 @keyframes background {
-  0% { background-color: #9F9; }
-  33% { background-color: #FF9; }  
-  67% { background-color: #FF82E4; }
-  100% { background-color: #9F9; }
-}	
-
+  0% {
+    background-color: #9F9;
+  }
+  33% {
+    background-color: #FF9;
+  }
+  67% {
+    background-color: #FF82E4;
+  }
+  100% {
+    background-color: #9F9;
+  }
+}
 @media screen and (min-width: 1025px) {
   body {
     font-size: 1.3vw;
