@@ -474,6 +474,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 @-webkit-keyframes background {
   0% {
@@ -535,7 +536,7 @@ img {
   }
   .video-overlay {
     margin-left: -0.5em;
-  font-size: 1.8em;
+    font-size: 1.8em;
   }
   .cta {
     height: 2em;

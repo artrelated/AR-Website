@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ART RELATED FOUNDATION | Sreda | Проект Среда | Футура</title>
+<link href="../../css/screen.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../favicon.png" type="image/png">
+</head>
+
+<body class="sreda-header">
+<div class="main sreda-header">
+  <div class="header"> <span class="title">ART RELATED</span>
+    <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
+      If you have questions please <a href="../../contact">contact us.</a></p>
+  </div>
+  <div class="logo">®</div>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
+  <div class="content">
+    <p class="mobile-caption"></p>
+    <p class="subtitle"> <a href="../sreda">проект "Среда"</a></p>
+    <div class="video-container"><span class="cta video-overlay">Резонантно табло</span>
+      <video loop autoplay muted width="100%" height="auto" controlslist="nodownload nofullscreen" >
+        <source src="../img/ResonantLightbox.webm" type="video/webm"/>
+      </video>
+    </div>
+    <p>Site-specific инсталацията на Катя Ченг (Тайван) и Георги Томов Георгиев (България).</p>
+    <p class="indent">„Резонантно табло“ е site-specific творба на артистите Катя Ченг и Георги Томов Георгиев разработена за пешеходното пространство на моста на бул. „Мадрид“, разработен в рамките на <a href="../sreda">проект "Среда"</a>. Инсталацията съдържа иридисцентен стъклен артефакт, който бива задвижван от вибрациите в непосредствената околна среда. Целта на работата е да пресъздаде визуално връзките между всички обитатели на градската среда.</p>
+    <p class="indent">Стъкленият артефакт ще бъде изработен от парченца рециклирано стъкло, събрани от деца живеещи в гр. София. </p>
+    <p class="indent">Катя Ченг е родена в Чангхуа, Тайван през 1994г.. Тя учи в художественото училище Вайсензее в Берлин, където завършва своя магистър по дизайн. Нейната практика се развива върху пресечната точка на фантазията и реалността чрез взаимодействието на светлина, материя и пространствени инсталации. Тя извлича поетични образи от природни явления и митология, за да определи оптичните свойства на материалите и структурните повърхности в работата си. Тя внася артистичната концепция за магията в жизненото пространство, провокирайки зрителя да прекрачи мъгливата граница между фантазия и реалност. Катя живее в Берлин.</p>
+    <p class="indent"><a href="https://www.katyacheng.com/" target="_blank">katyacheng.com</a><br>
+    </p>
+    <br>
+    <br>
+    <p class="indent">Георги Томов Георгиев е роден в София през 1983г. Той завършва Sound Studies &amp; Sonic Arts в Universität der Künste Берлин. Георги създава сетивни преживявания чрез аудиовизуални инсталации, скулптура, музика. </p>
+    <p class="indent"><a href="https://www.georgitomovgeorgiev.com/" target="_blank">georgitomovgeorgiev.com</a><br>
+    </p>
+    <a href="../sreda"><img src="../img/resonant-lightbox.png" alt="Resonant Lighbox" /></a>
+    <p class="indent"><a href="../sreda">Повече информация за проект "Среда"</a></p>
+    <a href="../sreda"><img src="../img/sreda-header.svg" alt="Sreda (Environment)" /></a> </div>
+  <script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
+  <div id="dm" class="drop-menu"><a href="../../">About</a><br>
+    <a href="../../projects">Projects</a><br>
+    <a href="../../archive">Archive</a><br>
+    <a href="../../team">Team</a><br>
+    <a href="../../contact">Contact</a></div>
+</div>
+</body>
+</html>
