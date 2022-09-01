@@ -450,6 +450,7 @@ img {
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.1s ease;
+  padding-left: 0;
 }
 .cta:hover {
   background-position: left bottom;
@@ -460,6 +461,19 @@ img {
 }
 .cta:visited {
   color: #000;
+}
+.video-container {
+  position: relative;
+  text-align: center;
+}
+.video-overlay {
+  font-size: 0.8em;
+  position: absolute;
+  width: 69%;
+  margin: -0.5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @-webkit-keyframes background {
   0% {
@@ -518,6 +532,10 @@ img {
   .vertical {
     width: 32% !important;
     padding-bottom: 56.25% !important;
+  }
+  .video-overlay {
+    margin-left: -0.5em;
+  font-size: 1.8em;
   }
   .cta {
     height: 2em;

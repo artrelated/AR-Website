@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ART RELATED FOUNDATION | Sreda | Проект Среда</title>
+<link href="../../css/screen.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../favicon.png" type="image/png">
+</head>
+
+<body class="sreda-header">
+<div class="main sreda-header">
+  <div class="header"> <span class="title">ART RELATED</span>
+    <p class="menu">Find out more <a href="../../">about us</a>, our current <a href="../../projects">projects</a>, the works in the <a href="../../archive">archive</a> or our <a href="../../team">team.</a><br>
+      If you have questions please <a href="../../contact">contact us.</a></p>
+  </div>
+  <div class="logo">®</div>
+  <button onClick="dropmenu()" class="button" id="btn"></button>
+  <div class="content"> <img src="../img/sreda-header.svg" alt="Sreda (Environment)" />
+    <p class="mobile-caption"></p>
+    <p class="subtitle">Покана за участие в <a href="../sreda">проект "Среда"</a> <br>
+      Избери уъркшоп!</p>
+    <div class="video-container" oncontextmenu="return false;"><a href="untamed-architecture" class="cta video-overlay">Неукротимa Архитектура</a>
+      <video loop autoplay width="100%" height="auto" controlslist="nodownload nofullscreen" >
+        <source src="../img/UntamedArchitecture.webm" type="video/webm"/>
+      </video>
+    </div>
+    <p class="indent">Уъркшоп на Жазу Янг (Южна Корея)</p>
+    <p class="indent">Неукротима Архитектура на Жазу Янг е уъркшоп за юноши между 10 и 15 годишна възраст, част от проект "СРЕДА".(линк към повече информация за проекта)</p>
+    <p class="indent">Жазу Янг ще разгледа архитектурата на квартала и заедно с участниците ще установи контакт с естествени/градски домове на насекоми, които обитават градската среда. Жазу и участниците ще използват микроскопични лещи, за да достигнат до най-дълбоките и малки дупки, където се крият малки растения и насекоми. Участниците, които ще я придружават, ще могат да направят снимки и да открият квартала през очите на художника. Под формата на уъркшопове в рамките на 3 дни те ще придобият знания и умения във фотографските практики и ще изследват градската среда, за да развият усещане за нея като продължение на техния дом. Въз основа на събрания материал, Жазу ще направи опит да създаде 3D модели на микро хабитатите, в студията на фондация Резонатор, които участниците ще вземат със себе си. <br>
+      В рамките на 3 дни участниците ще имат възможността да работят с Жазу Янг и с педагожката и терапевтка Николина Ангелова. Тя не само ще се грижи за сигурността на участниците, но и ще превежда от английски език. </p>
+    <p class="indent">Условие за участие в уъркшопа е притежанието на смарт телефон.
+      Говорими езици по време на уъркшопа: български, английски, корейски. </p>
+    <p class="indent">Уъркшоповете ще се състоят в парка „Заимов“ и са цикъл от 3 сесии:</p>
+    <p class="indent">26.09.22 от 15:00ч.-16:30ч.<br>
+      27.09.22 от 15:00ч.-16:30ч.<br>
+      28.09.22 от 15:00ч.-16:30ч. </p>
+    <p class="indent">При записване за уъркшоп на 26.09.22 се записвате автоматично и за следващите дати.
+    <div class="indent"><a href="https://www.eventbrite.com/e/408749178797" class="cta">Запиши се тук</a></div>
+    </p>
+    <p class="indent">Представяне на проекта в студията на фондация Резонатор: 01.10.22, 18ч.</p>
+    <p class="indent">Уъркшопът е безплатен.</p>
+    <p class="indent">Жазу Янг е родена в Куанджу, Южна Корея през 1979г. и завършва история в Kyung Hee University, Сеул. Тя започва своята художествена практика с рисуване и с годините се развива в Мixed Мedia артист. В прехода си към професионална художничка, Янг прекарва уикендите, прониквайки в строителни обекти и рисувайки по стените на полуразрушените сгради. От рисуването Янг прави крачка напред към създаването на произведения с намерени предмети, за да визуализира градската памет. Тези материали, било то останки от стари сгради, маркучи или фрагменти от тапети, първоначално вградени в сградите стават част от изкуството на Жазу. В момента тя работи върху проекти свързани с влиянието на човека на околната среда и изследва скрития свят на микроорганизмите. Жазу живее и работи в Берлин. </p>
+    <p class="indent"><a href="https://www.jazooyang.com" target="_blank"></a>jazooyang.com<br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+    <p class="indent">Или предпочташ уъркшопа на Жулиан Фаржетон?<br>
+    </p>
+    <div class="video-container" oncontextmenu="return false;"><a href="futura" class="cta video-overlay">Футура</a>
+      <video loop autoplay width="100%" height="auto" controlslist="nodownload nofullscreen" >
+        <source src="../img/Futura.webm" type="video/webm"/>
+      </video>
+    </div>
+    <p class="indent"><a href="../sreda"><br>
+      <br>
+      Повече информация за проект "Среда"</a></p>
+  </div>
+  <script>
+	function dropmenu() {
+		var x = document.getElementById("dm");
+		var y = document.getElementById("btn");
+
+		  if (x.style.visibility === "visible")
+		  {
+			x.style.visibility = "hidden";
+			x.style.opacity = "0";
+			y.style.height = "6em";
+			y.style.width = "6.5em";
+			y.style.background = "rgba(255, 255, 255, 0)";
+
+
+		  } else {
+			x.style.visibility = "visible";
+			x.style.opacity = "1";
+			y.style.height = "100em";
+			y.style.width = "100em";
+			y.style.background = "rgba(255, 255, 255, 0.9)";
+
+		  }
+		}
+  </script>
+  <div id="dm" class="drop-menu"><a href="../../">About</a><br>
+    <a href="../../projects">Projects</a><br>
+    <a href="../../archive">Archive</a><br>
+    <a href="../../team">Team</a><br>
+    <a href="../../contact">Contact</a></div>
+</div>
+</body>
+</html>
