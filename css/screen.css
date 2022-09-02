@@ -330,7 +330,7 @@ body {
 }
 img {
   margin-left: -3em;
-  max-width: 200%;
+  width: 95vw;
 }
 .header {
   padding: 1em 0 2em 3em;
@@ -477,7 +477,7 @@ img {
   z-index: 1;
 }
 .max-h {
-    max-height: 40em;
+  max-height: 40em;
 }
 @-webkit-keyframes background {
   0% {
@@ -510,6 +510,9 @@ img {
 @media screen and (min-width: 1025px) {
   body {
     font-size: 1.3vw;
+  }
+  img {
+    width: 75vw;
   }
   .menu {
     font-size: 1.05em;
