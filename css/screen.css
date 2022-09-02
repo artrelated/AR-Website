@@ -330,7 +330,7 @@ body {
 }
 img {
   margin-left: -3em;
-  max-width: 200%;
+  width: auto;
 }
 .header {
   padding: 1em 0 2em 3em;
